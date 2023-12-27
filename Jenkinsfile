@@ -6,7 +6,7 @@ pipeline{
         
     }
     triggers{
-        pollSCM '*/1 * * * *'
+        pollSCM '* * * * *'
     }
     stages{
         stage('Build'){
