@@ -3,6 +3,10 @@ pipeline{
         node{
             label 'Default-node'
         }
+        
+    }
+    triggers{
+        pollSCM '*/1 * * * *'
     }
     stages{
         stage('Build'){
